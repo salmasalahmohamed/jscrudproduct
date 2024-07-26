@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Form Validation using a sample registration form</title>
+  </head>
+
+  <body>
+
+
+
+        <center>
+      <table>
+        <tr>
+          <h1>crud operation</h1>
+        </tr>
+
+        <tr>
+          <th><label for="username">Name:</label></th>
+          <td>
+            <input type="text" name="title" id="title" />
+          </td>
+        </tr>
+
+<div class="inputs">
+        <tr>
+          <th><label for="userid">price:</label></th>
+          <td>
+            <input   onkeyup="gettotal()"  type=  "number" name="price"  id="price" />
+          </td>
+        </tr>
+        <tr>
+            <th><label for="userid">taxes:</label></th>
+            <td>
+              <input onkeyup="gettotal()" type="number" name="taxes" id="taxes"  />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="userid">ads:</label></th>
+            <td>
+              <input onkeyup="gettotal()"  type="number" name="ads"   id="ads"/>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="userid">disc:</label></th>
+            <td>
+              <input  onkeyup="gettotal()"  type="number" name="disc"  id="disc" />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="userid">total:</label></th>
+            <td>
+                <small id ="total"></small>
+            </td>
+          </tr>
+    </div>
+
+        <tr>
+          <th><label for="country">count:</label></th>
+          <td><input type="number" id="count"> </td>
+        </tr>
+
+
+        <tr>
+          <th><label for="email">category:</label></th>
+          <td>
+            <input type="text" id="category">
+          </td>
+        </tr>
+        <div class="search">
+            <div class="btnsearch">
+                <button id ="searchbytitle">search by title</button>
+                <button id="searchbycategory">search by category</button>
+
+            </div>
+
+        </div>
+        <tr>
+          <td></td>
+          <td>
+            <button   id = "submit" >submit</button>
+
+          </td>
+         </tr>
+
+        
+
+      </table>
+      <div id="deleteall">
+        
+      </div>
+    </center>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>disc</th>
+            <th>total</th>
+            <th>count</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+
+        </tr>
+        <tbody id="tbody">
+           
+        </tbody>
+    </table>
+    <script src="file.js"></script>
+  </body>
+</html>
